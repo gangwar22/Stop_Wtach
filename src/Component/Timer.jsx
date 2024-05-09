@@ -1,5 +1,4 @@
 import { useRef, useState, useEffect } from "react";
-import "../Timer.css";
 
 function Timer() {
     const [hh, setHH] = useState(0);
@@ -39,6 +38,7 @@ function Timer() {
         clearInterval(intervalId.current);
         setTimer(false); 
         setHH(0);
+
         setMM(0);
         setSS(0);
     };
@@ -54,9 +54,9 @@ function Timer() {
                 </div>
             </div>
             <div className="button">
-                <button onClick={handleStart}>Start</button>
-                <button onClick={handleStop}>Stop</button>
-                <button onClick={handleReset}>Reset</button>
+                <button className="button_1" onClick={handleStart}>Start</button>
+                <button className="button_1" onClick={handleStop}>Stop</button>
+                <button className="button_1" onClick={handleReset}>Reset</button>
             </div>
         </div>
     );

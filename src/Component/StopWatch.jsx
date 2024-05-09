@@ -34,14 +34,15 @@ function StopWatch() {
 
     return (
         
-        <div className="container" >
+        <div className="container_T" >
+            <h1 className="heading">StopWatch</h1>
             <div className="main">
                 <h1>{Format_time()}</h1>
             </div>
             <div className="main_1">
-                <button onClick={handelClick_Start}>Start</button>
-                <button onClick={HandelClick_Stop}>Stop</button>
-                <button onClick={handelClick_Rest}>Reset</button>
+                <button className="btn-1" onClick={handelClick_Start}>Start</button>
+                <button className="btn-1" onClick={HandelClick_Stop}>Stop</button>
+                <button className="btn-1" onClick={handelClick_Rest}>Reset</button>
             </div>
         </div>
       
