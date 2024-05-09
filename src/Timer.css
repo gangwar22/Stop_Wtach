@@ -1,0 +1,79 @@
+* {
+    background-color: black;
+}
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(219, 213, 213, 0.19), 0 6px 6px rgba(135, 21, 21, 0.23);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    height: 50vh;
+    margin-top: 27vh;
+    background-color: rgb(177, 152, 152);
+}
+
+.input{
+    background-color: rgb(177, 152, 152);
+    margin-bottom: 120px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(165, 150, 150);
+    height: 50px;
+    margin-top: 280px;
+    flex-direction: column;
+}
+
+
+
+h1 {
+    background-color: rgb(177, 152, 152);
+    font-size: 4rem;
+    top: 0;
+  margin-left: 140px;
+  margin-bottom: 40px;
+}
+
+
+.box {
+    width: 150px;
+    height: 40px;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    border-radius: 10px 0 10px 0;
+    text-align: center;
+    background-color: rgb(254, 252, 252);
+    margin-bottom: 20%;
+}
+
+.button {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    background-color: rgb(167, 160, 160);
+    margin-bottom: 200px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+
+@media screen and (max-width: 600px) {
+    /* CSS rules for screens smaller than 600px */
+    .main_container {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-top: 20vh; /* Adjust margin for smaller screens */
+    }
+    /* Add more rules as needed */
+}
