@@ -1,14 +1,22 @@
-import StopWatch from "./Component/StopWatch"
-import Timer from "./Component/Timer"
-import "./App.css"
+import  { useState } from "react";
+import StopWatch from "./Component/StopWatch";
+import Timer from "./Component/Timer";
+
 function App() {
+  const [isStopwatchVisible, setIsStopwatchVisible] = useState(true);
+
+  const toggleComponent = () => {
+    setIsStopwatchVisible(!isStopwatchVisible);
+  };
 
   return (
     <>
-      <StopWatch/>
-      <Timer/>/
+        <button onClick={toggleComponent} className="color">
+          {isStopwatchVisible ? "Show Timer" : "Show Stopwatch"}
+        </button>
+      {isStopwatchVisible ? <StopWatch /> : <Timer />}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
